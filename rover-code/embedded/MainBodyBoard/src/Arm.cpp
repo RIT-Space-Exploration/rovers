@@ -6,7 +6,7 @@ Arm::Arm()
     pinMode(WRIST_DIR_PIN, OUTPUT);
     pinMode(WRIST_SPEED_PIN, OUTPUT);
     pinMode(SHOULDER_DIR_PIN, OUTPUT);
-    pinMode(SHOULDER_SPEED_PIN, OUTPUT);  
+    pinMode(SHOULDER_SPEED_PIN, OUTPUT);
 
     // Initialize and start timer to outut correct PWM signals
     Timer3.initialize(time);
