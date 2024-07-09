@@ -24,9 +24,3 @@ dist-ssr
 
 # Nix Shell
 shell.nix
-
-# Python Virtual Enviornment
-venv
-venv-windows
-venv-linux
-
