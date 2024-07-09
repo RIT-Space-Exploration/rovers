@@ -22,7 +22,8 @@ if __name__ == '__main__':
     #     pygame.time.delay(100)
     #     xbee.UpdateInfo()
     #     for event in pygame.event.get():
-    #         xbee.SendCommand(event)
+    #         xbee.SendCommand(event)+
+    
     #         if(event.type == pygame.QUIT):
     #             done = True
     # xbee.XbeeCom.close()

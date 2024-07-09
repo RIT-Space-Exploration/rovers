@@ -27,4 +27,6 @@ shell.nix
 
 # Python Virtual Enviornment
 venv
+venv-windows
+venv-linux
 
