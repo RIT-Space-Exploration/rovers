@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v5.0.0
     hooks:
       - id: check-json
       - id: check-toml
@@ -16,13 +16,13 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/psf/black
-    rev: 23.12.1
+    rev: 24.10.0
     hooks:
       - id: black
         exclude: ^src/kg_api/models/alembic/versions
         args: ["-l", "100", "--target-version=py38"]
   - repo: https://github.com/PyCQA/flake8
-    rev: "6.1.0"
+    rev: "7.1.1"
     hooks:
       - id: flake8  # C90,E,F,W
         exclude: ^src/kg_api/models/alembic
@@ -51,14 +51,14 @@ repos:
             print('run `portry update` to fix')
             exit(1)
           "
-        language: python_venv
+        language: python
         additional_dependencies:
           - poetry
         verbose: True
         files: pyproject.toml
 
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.10.0
+    rev: v9.20.0
     hooks:
       - id: commitlint
         stages: [commit-msg]
